@@ -44,6 +44,32 @@
 * sudo systemctl status mariadb
 * mysql --version
 
+1. Download the MySQL 8.0 community release package. This ensures you get the correct
+repository configuration for MySQL 8.0:
+
+* sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-4.noarch.rpm
+
+2. Install the MySQL community release package. This adds the MySQL repository to your system:
+
+* sudo dnf install mysql80-community-release-el9-4.noarch.rpm -y
+
+3. Install MySQL server
+
+* sudo dnf install mysql-community-server -y
+
+4. Verify MySQL installation. Check the installed MySQL version:
+
+* mysql -V
+
+5. Start and Enable MySQL Service and Start the MySQL service and configure it to run on boot:
+
+* sudo systemctl start mysqld
+* sudo systemctl enable mysqld
+
+6. Check MySQL service status
+
+* systemctl status mysqld
+
 
 # And type the below command to initialize the database.
 * mysql -h book.rds.com -u <user_name_of_rds> -p<password_of_rds> test < test.sql
