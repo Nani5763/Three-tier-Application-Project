@@ -1,7 +1,5 @@
-# Three-tier-Application-Project
-
-# 3-tier-app-infra
-
+#                           Three-tier-Application-Project
+-----------------------------------------------------------------------------------------------
 # Public Frontend server
 # Give these commmands into terminal
 * cd Project
