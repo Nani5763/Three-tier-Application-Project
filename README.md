@@ -33,15 +33,9 @@
 5. let's connect the private server by using below command
 
 * ssh -i key.pem ec2-user@<Private_IP_add_backend_server>
-* ssh -i Project-key.pem ec2-user@54.211.226.38
+* sudo ssh -i Project-key.pem ec2-user@54.211.226.38
 
 # Install after connect Backend server
-* sudo yum install mariadb105-server -y
-* sudo systemctl start mariadb
-* sudo systemctl enable mariadb
-* sudo systemctl status mariadb
-* mysql --version
-
 1. Download the MySQL 8.0 community release package. This ensures you get the correct
 repository configuration for MySQL 8.0:
 
@@ -66,7 +60,7 @@ repository configuration for MySQL 8.0:
 
 6. Check MySQL service status
 
-* systemctl status mysqld
+* sudo systemctl status mysqld
 
 
 # And type the below command to initialize the database.
